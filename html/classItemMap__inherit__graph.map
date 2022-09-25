@@ -1,0 +1,12 @@
+<map id="ItemMap" name="ItemMap">
+<area shape="rect" id="node1" title=" " alt="" coords="282,5,362,32"/>
+<area shape="rect" id="node2" href="$classEmpty.html" title=" " alt="" coords="159,80,223,107"/>
+<area shape="rect" id="node3" href="$classJewel.html" title=" " alt="" coords="248,80,305,107"/>
+<area shape="rect" id="node7" href="$classObstacle.html" title=" " alt="" coords="329,80,408,107"/>
+<area shape="rect" id="node10" href="$classRobot.html" title=" " alt="" coords="432,80,492,107"/>
+<area shape="rect" id="node4" href="$classJewelBlue.html" title=" " alt="" coords="5,155,92,181"/>
+<area shape="rect" id="node5" href="$classJewelGreen.html" title=" " alt="" coords="117,155,213,181"/>
+<area shape="rect" id="node6" href="$classJewelRed.html" title=" " alt="" coords="237,155,319,181"/>
+<area shape="rect" id="node8" href="$classTree.html" title=" " alt="" coords="344,155,393,181"/>
+<area shape="rect" id="node9" href="$classWater.html" title=" " alt="" coords="417,155,477,181"/>
+</map>

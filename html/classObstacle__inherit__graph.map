@@ -1,0 +1,6 @@
+<map id="Obstacle" name="Obstacle">
+<area shape="rect" id="node1" title=" " alt="" coords="29,80,108,107"/>
+<area shape="rect" id="node3" href="$classTree.html" title=" " alt="" coords="5,155,55,181"/>
+<area shape="rect" id="node4" href="$classWater.html" title=" " alt="" coords="79,155,139,181"/>
+<area shape="rect" id="node2" href="$classItemMap.html" title=" " alt="" coords="29,5,109,32"/>
+</map>

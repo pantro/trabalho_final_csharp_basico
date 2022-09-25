@@ -1,0 +1,7 @@
+<map id="Jewel" name="Jewel">
+<area shape="rect" id="node1" title=" " alt="" coords="136,80,193,107"/>
+<area shape="rect" id="node3" href="$classJewelBlue.html" title=" " alt="" coords="5,155,92,181"/>
+<area shape="rect" id="node4" href="$classJewelGreen.html" title=" " alt="" coords="117,155,213,181"/>
+<area shape="rect" id="node5" href="$classJewelRed.html" title=" " alt="" coords="237,155,319,181"/>
+<area shape="rect" id="node2" href="$classItemMap.html" title=" " alt="" coords="125,5,205,32"/>
+</map>
