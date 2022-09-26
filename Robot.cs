@@ -6,7 +6,7 @@ public class Robot : ItemMap {
     private List<Jewel> Bag = new List<Jewel>();
     public int energy {get; set;}
 
-    public Robot(Map map, int x=0, int y=0, int energy=10) : base("ME "){
+    public Robot(Map map, int x=0, int y=0, int energy=5) : base("ME "){
         this.map = map;
         this.x = x;
         this.y = y;
@@ -23,10 +23,18 @@ public class Robot : ItemMap {
             this.x--;
             this.energy--;
         } 
+        catch (OccupiedPositionException e)
+        {
+            Console.WriteLine($"Position {this.x+1}, {this.y} is occupied");
+        }
+        catch (OutOfMapException e)
+        {
+            Console.WriteLine($"Position {this.x+1}, {this.y} is out of map");
+        }
         catch (Exception e)
         {
-
-        }
+            Console.WriteLine($"Position is prohibit");
+        }   
        
     }
 
@@ -61,10 +69,18 @@ public class Robot : ItemMap {
             this.y++;
             this.energy--;
         }
+        catch (OccupiedPositionException e)
+        {
+            Console.WriteLine($"Position {this.x+1}, {this.y} is occupied");
+        }
+        catch (OutOfMapException e)
+        {
+            Console.WriteLine($"Position {this.x+1}, {this.y} is out of map");
+        }
         catch (Exception e)
         {
-
-        }
+            Console.WriteLine($"Position is prohibit");
+        }   
         
     }
 
@@ -76,10 +92,18 @@ public class Robot : ItemMap {
             this.y--;
             this.energy--;
         }
+        catch (OccupiedPositionException e)
+        {
+            Console.WriteLine($"Position {this.x+1}, {this.y} is occupied");
+        }
+        catch (OutOfMapException e)
+        {
+            Console.WriteLine($"Position {this.x+1}, {this.y} is out of map");
+        }
         catch (Exception e)
         {
-
-        }
+            Console.WriteLine($"Position is prohibit");
+        }   
         
     }
 
@@ -88,11 +112,15 @@ public class Robot : ItemMap {
         List<Jewel> NearJewels = map.GetJewels(this.x, this.y);
 
         Rechargeable? RechargeEnergy = map.GetRechargeable(this.x, this.y);
-    
+        
         RechargeEnergy?.Recharge(this);
 
-        foreach (Jewel j in NearJewels)
+        foreach (Jewel j in NearJewels){
             Bag.Add(j);
+            //Perguntar se é JB
+            if(Convert.ToString(j) == "JB ")
+                this.energy = this.energy+5;
+        }
         
     }
 

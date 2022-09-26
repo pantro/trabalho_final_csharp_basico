@@ -8,8 +8,8 @@ public class Map {
     public Map(int w=10, int h=10, int level=1)
     {
 
-        this.w = w <= 30 ? w : 30;
-        this.h = h <= 30 ? h : 30;
+        this.w = w <= 30 ? w : 30;//Max 30
+        this.h = h <= 30 ? h : 30;//Max 30
 
         Matriz = new ItemMap[w, h];
 

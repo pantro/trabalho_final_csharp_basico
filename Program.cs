@@ -39,7 +39,9 @@
         }
         catch(RanOutOfEnergyException e)
         {
-            Console.WriteLine("Robot ran out of energy!");
+            Console.WriteLine("==================================");
+            Console.WriteLine("GAME OVER: Robot ran out of energy!");
+            Console.WriteLine("==================================");
         }
 
       }
