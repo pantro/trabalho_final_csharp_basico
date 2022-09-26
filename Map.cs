@@ -148,6 +148,8 @@ public class Map {
         this.Insert(new Tree(), 8, 3);
         this.Insert(new Tree(), 2, 5);
         this.Insert(new Tree(), 1, 4);
+        this.Insert(new Radioactive(), 2, 8);
+        this.Insert(new Radioactive(), 8, 8);
     }
 
     private void GenerateRandom()
@@ -179,6 +181,24 @@ public class Map {
             int yRandom = r.Next(0, h);
 
             this.Insert(new Water(), xRandom, yRandom);
+
+        }
+
+        for(int x = 0; x < 10; x++)
+        {
+            int xRandom = r.Next(0, w);
+            int yRandom = r.Next(0, h);
+
+            this.Insert(new Tree(), xRandom, yRandom);
+
+        }
+
+        for(int x = 0; x < 2; x++)
+        {
+            int xRandom = r.Next(0, w);
+            int yRandom = r.Next(0, h);
+
+            this.Insert(new Radioactive(), xRandom, yRandom);
 
         }
     }
